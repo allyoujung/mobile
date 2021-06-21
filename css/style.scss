@@ -1,0 +1,115 @@
+html{font-size: 20px;}
+body{font-size: 1rem;}
+
+$orange:#FF5100;
+$blue:#1DBEEF;
+$white:#fff;
+$lightgray1:#eeeeee;
+$lightgray2:#E5E5E5;
+$darkgray:#666666;
+$dark-light-gray:#808080;
+$dark:#000;
+
+header{ height: 3rem; width: 100%; background: #FF5100;
+    .logo{float: left;
+        img{ height: 1.2rem; margin-top: .9rem; margin-left: .5rem;}
+    }
+    .menu{float: right;
+        img{ height: 1.4rem;margin-top: .8rem; margin-right: .5rem;}
+    }
+}
+#contents{height: inherit; width: 100%; background: khaki;
+    .con1{ float: left;
+        .button{background: $lightgray1; width: 16.7rem; height: 2.3rem; margin-left: 1rem; margin-top: .8rem;
+            border-radius: 50px;
+            li{float: left; width: 5.6rem;
+                a{display: block; text-align: center; line-height: 2.3rem; font-size: .7rem; color: $dark-light-gray;
+                    
+                }
+            }
+            li.active{width: 5rem;  height: 1.7rem;margin-left: .4rem; margin-top: .3rem;background: $white; border-radius: 50px;
+                a{display: block; line-height: 1.6rem; font-size: .7rem; font-weight: 500; color: $orange;
+                    
+                }
+            }
+        }
+        .click{display: flex; justify-content: space-between; margin-left: 1rem; margin-top: 1rem; height: 3rem; align-items: center;
+            border-bottom: 1px solid $lightgray2;
+            .Start{
+                h3{display: block; color: $dark-light-gray;}
+                h2{font-size: 1rem; 
+                    a{color: #ccc;}
+                }
+            }
+            .icon{background: url(../img/icon_switch_off.png) no-repeat 0 0/cover; width: 1.5rem; height: 1.5rem;}
+            .arrive{text-align: right;
+                h3{display: block; color: $dark-light-gray;}
+                h2{font-size: 1rem; 
+                    a{color: #ccc;}
+                }
+            }
+        }
+        .text-list{display: flex; flex-direction: column; margin-left: 1rem; margin-top: 1rem;
+            .text{border: 1px solid #ccc; margin-top: .4rem; padding: .2rem;}
+            .text1{width: 10rem;
+                a{font-size: .6rem;
+                    span{color: $blue;
+
+                    }
+                }
+            }
+            .text2{display: flex;
+                .text2-1{ margin-right: .3rem;
+                    a{font-size: .6rem;
+                        span{ color: $orange;
+
+                        }
+                    }
+                }
+                .text2-2{
+                    a{font-size: .6rem;}
+                }
+            }
+            .text3{width: 5.2rem;
+                a{font-size: .6rem;
+                    span{
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    .con2{float: left; margin-top: 1rem;
+        .event{width: 17rem; height: 5rem; margin-left: .9rem; position: relative;
+            h2{
+                a{
+
+                }
+            }
+            .img{
+                background: url(../img/bm_kr_210609_BuzinessLight.jpg) no-repeat center center/cover; width: 100%; height: 100%;
+                margin-top: .5rem;  border-radius: .5rem;
+            }
+            .number{position: relative; top: -2rem; right: -13.2rem; width: 1.9rem;font-size: .5rem; color: $white; background-color: $dark; border-radius: 20px; padding: .2888rem 1rem .2888rem .3888rem ;
+                text-align: center; opacity: .5;
+                .plus{font-size: 0.9rem; position: absolute; top:-1px; right: 10px;}
+            }
+        }
+    }
+    .con3{clear: both; padding-top:2.5rem; margin-left: 1rem;
+        .service{
+            h2{
+                a{
+
+                }
+            }
+            .swiper-container{width: 100%; 
+                .swiper-slide{width: 80%; 
+                    img{
+                        width: 14rem; border-radius: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
