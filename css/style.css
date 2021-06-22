@@ -1,98 +1,94 @@
-html {
-  font-size: 20px;
-}
-
-body {
-  font-size: 1rem;
+#wrap {
+  padding: 0 18px;
 }
 
 header {
-  height: 3rem;
+  height: 5rem;
   width: 100%;
-  background: #FF5100;
 }
 header .logo {
   float: left;
 }
 header .logo img {
-  height: 1.2rem;
-  margin-top: 0.9rem;
-  margin-left: 0.5rem;
+  height: 2.4rem;
+  margin-top: 1.2rem;
 }
 header .menu {
   float: right;
 }
 header .menu img {
-  height: 1.4rem;
-  margin-top: 0.8rem;
-  margin-right: 0.5rem;
+  height: 2.4rem;
+  margin-top: 1.2rem;
 }
 
 #contents {
   height: inherit;
   width: 100%;
   background: khaki;
+  display: flex;
+  flex-direction: column;
 }
 #contents .con1 {
   float: left;
+  width: 100%;
 }
 #contents .con1 .button {
   background: #eeeeee;
-  width: 16.7rem;
-  height: 2.3rem;
-  margin-left: 1rem;
-  margin-top: 0.8rem;
+  height: 4vh;
+  margin-top: 1rem;
   border-radius: 50px;
 }
 #contents .con1 .button li {
   float: left;
-  width: 5.6rem;
+  width: 33.333%;
 }
 #contents .con1 .button li a {
   display: block;
   text-align: center;
-  line-height: 2.3rem;
-  font-size: 0.7rem;
+  line-height: 4vh;
+  font-size: 1.5rem;
   color: #808080;
 }
 #contents .con1 .button li.active {
-  width: 5rem;
-  height: 1.7rem;
-  margin-left: 0.4rem;
-  margin-top: 0.3rem;
-  background: #fff;
-  border-radius: 50px;
+  width: 33.333%;
 }
 #contents .con1 .button li.active a {
+  height: 3.2vh;
+  margin-left: 0.4rem;
+  margin-top: 0.4rem;
+  background: #fff;
+  border-radius: 50px;
   display: block;
-  line-height: 1.6rem;
-  font-size: 0.7rem;
+  line-height: 3.2vh;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #FF5100;
 }
 #contents .con1 .click {
   display: flex;
   justify-content: space-between;
-  margin-left: 1rem;
   margin-top: 1rem;
-  height: 3rem;
+  height: 9rem;
   align-items: center;
   border-bottom: 1px solid #E5E5E5;
 }
 #contents .con1 .click .Start h3 {
   display: block;
   color: #808080;
+  font-size: 1.2rem;
 }
 #contents .con1 .click .Start h2 {
-  font-size: 1rem;
+  font-size: 2.5rem;
 }
 #contents .con1 .click .Start h2 a {
   color: #ccc;
+  font-weight: 500;
 }
 #contents .con1 .click .icon {
   background: url(../img/icon_switch_off.png) no-repeat 0 0/cover;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 2rem;
 }
 #contents .con1 .click .arrive {
   text-align: right;
@@ -100,29 +96,31 @@ header .menu img {
 #contents .con1 .click .arrive h3 {
   display: block;
   color: #808080;
+  font-size: 1.2rem;
 }
 #contents .con1 .click .arrive h2 {
-  font-size: 1rem;
+  font-size: 2.5rem;
 }
 #contents .con1 .click .arrive h2 a {
   color: #ccc;
+  font-weight: 500;
 }
 #contents .con1 .text-list {
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
   margin-top: 1rem;
 }
 #contents .con1 .text-list .text {
   border: 1px solid #ccc;
-  margin-top: 0.4rem;
-  padding: 0.2rem;
+  margin-top: 0.7rem;
+  padding: 5px 10px;
+}
+#contents .con1 .text-list .text a {
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 #contents .con1 .text-list .text1 {
-  width: 10rem;
-}
-#contents .con1 .text-list .text1 a {
-  font-size: 0.6rem;
+  width: 24rem;
 }
 #contents .con1 .text-list .text1 a span {
   color: #1DBEEF;
@@ -131,35 +129,33 @@ header .menu img {
   display: flex;
 }
 #contents .con1 .text-list .text2 .text2-1 {
-  margin-right: 0.3rem;
-}
-#contents .con1 .text-list .text2 .text2-1 a {
-  font-size: 0.6rem;
+  margin-right: 0.4rem;
 }
 #contents .con1 .text-list .text2 .text2-1 a span {
   color: #FF5100;
 }
 #contents .con1 .text-list .text2 .text2-2 a {
-  font-size: 0.6rem;
+  font-size: 1.3rem;
 }
 #contents .con1 .text-list .text3 {
-  width: 5.2rem;
-}
-#contents .con1 .text-list .text3 a {
-  font-size: 0.6rem;
+  width: 13rem;
 }
 #contents .con1 .text-list .text3 a span {
   color: #FF5100;
 }
 #contents .con2 {
   float: left;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 #contents .con2 .event {
-  width: 17rem;
-  height: 5rem;
-  margin-left: 0.9rem;
+  width: 95%;
+  margin: 0 auto;
+  height: 13rem;
   position: relative;
+}
+#contents .con2 .event h2 a {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 #contents .con2 .event .img {
   background: url(../img/bm_kr_210609_BuzinessLight.jpg) no-repeat center center/cover;
